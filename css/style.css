@@ -1,0 +1,230 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar Logo and Image */
+#logo{
+    margin: 6px 20px;
+}
+#logo img{
+    height: 75px;
+    width: 75px;
+}
+
+/* Navigation Bar List Styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.4;
+}   
+
+#navbar ul li{
+    
+    font-size: 1.4em;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+/* Section Home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../img/bg.jpg') no-repeat center center/cover ; /*do dots islie lagae hain qk jahan se image lani hai wo is folder se bahir hai.*/
+    height: 540px;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+#home button:hover{
+    color: black;
+    background-color: white;
+    /* font-weight: bold; */
+    border-color: black;
+}
+
+/* Services Section */
+#services-container{
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+#services{
+    display: flex;
+    margin: 5px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 12px;
+    background: #f9f9f9
+}
+#services .box img{
+    display: block;
+    height: 200px;
+    margin: auto;
+    border-radius: 12px;
+}
+#services p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/* Client Section */
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    margin: 5px 100px;
+}
+#client-section::before{
+    content: "";
+    background-color: #737373;
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    
+    z-index: -1;
+    opacity: 0.1;
+} 
+
+/* Contact Us Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input , #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 32%
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* footer section */
+#footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    font-size: 1.1rem;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.h-secondary{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.btn{
+    padding: 9px 20px;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #4c2e2e;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}

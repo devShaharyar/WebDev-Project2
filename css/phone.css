@@ -1,0 +1,50 @@
+html,body
+{
+    overflow-x: hidden; 
+    /*  RIGHT SIDE PR AIK WHITE SPACE AJATI THI RESPONSIVE KRTE WO KHATAM KRNE KE LIE LAGAYA */
+}
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom:  8px;
+}
+
+/* Home Section */
+#home{                  
+    padding: 5px 100px;
+
+}
+#home p{
+    font-size: 10px;
+}
+
+/* Services Section  */
+#services{
+    flex-direction: column;
+}
+#services .box img{
+    height: 148px;
+
+}
+/* Client Section */
+#clients{
+    flex-direction: column;
+}
+/* Contact Section  */
+#contact-box form{
+    width: 80%
+}
+/* Footer  */
+
+/* Utility Classes */
+.h-primary{
+    font-size: 20px;
+}
+.btn{
+    font-size: 10px;
+    padding: 5px 14px;
+}
